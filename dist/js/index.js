@@ -8,14 +8,14 @@ var ReactDOM = require("react-dom");
 var AppContainer = require("react-hot-loader").AppContainer;
 // tslint:enable
 /*
-  Main App CSS
-    - Used for introduce CSS in webpack workflow
-    - In webpack Dev it will be injected as /**
-    - In webpack prod it will be extracted as a separate bundled file
+ Main App CSS
+ - Used for introduce CSS in webpack workflow
+ - In webpack Dev it will be injected as /**
+ - In webpack prod it will be extracted as a separate bundled file
  */
 require("./../stylesheets/main.css");
 /*
-  Main App Container
+ Main App Container
  */
 var App_1 = require("./containers/App/App");
 // Render function containing the HMR AppContainer
@@ -29,6 +29,7 @@ render(App_1.default);
 // Hot Module Replacement API
 if (module.hot) {
     module.hot.accept("./containers/App/App", function () {
+        console.log("Hot reload for APP");
         // If we receive a HMR request for our App container,
         // then reload it using require (we can't do this dynamically with import)
         var NextApp = require("./containers/App/App").default;

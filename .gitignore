@@ -1,11 +1,12 @@
 # OS X
 .DS_Store
 .idea
-/dist/**
+
 # Node
-/node_modulesg
+/node_modules/
 npm-debug.log*
 
 # Build
+/dist/js/
 dist/bundle.js*
 dist/main.css*
