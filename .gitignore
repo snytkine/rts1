@@ -1,9 +1,9 @@
 # OS X
 .DS_Store
 .idea
-
+/dist/**
 # Node
-/node_modules
+/node_modulesg
 npm-debug.log*
 
 # Build
