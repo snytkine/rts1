@@ -5,7 +5,7 @@ import ViewerItem from "../ViewerItem/ViewerItem";
 const styles: any = require("./Viewer.module.css");
 
 // Since TypeScript 2.3 it doesn´t import ViewerItemCardType on this way we need to use require
-// import {ViewerItemCardType} from "../ViewerItem/ViewerItemCardType";
+//import {ViewerItemCardType} from "../ViewerItem/ViewerItemCardType";
 /* tslint:disable-next-line:no-var-requires */
 const cardType = require("../ViewerItem/ViewerItemCardType");
 /* tslint:enable:no-var-requires */

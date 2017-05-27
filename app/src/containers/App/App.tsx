@@ -23,7 +23,7 @@ import * as moment from "moment";
 
 export default class App extends React.Component<IAppProps, {}> {
     public static defaultProps: IAppProps = {
-        name: "TypeScript Card Types demo"
+        name: "TypeScript Card Types demo?"
     };
     public render() {
         const article = {

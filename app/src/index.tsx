@@ -38,6 +38,7 @@ declare var module: { hot: any };
 // Hot Module Replacement API
 if (module.hot) {
     module.hot.accept("./containers/App/App", () => {
+        console.log("Hot reload for APP");
         // If we receive a HMR request for our App container,
         // then reload it using require (we can't do this dynamically with import)
         const NextApp = require("./containers/App/App").default;
