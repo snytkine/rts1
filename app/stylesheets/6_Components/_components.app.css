@@ -65,5 +65,7 @@
   display: inline-block;
   color: #d66;
   content: " + ";
+  font-weight: bold;
+  margin-left: 2px;
 }
 
