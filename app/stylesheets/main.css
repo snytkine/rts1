@@ -37,7 +37,7 @@
 /**
  * 4. BASE
  */
-
+@import '4_Base/base.css';
 
 /**
  * 5. OBJECTS
@@ -57,3 +57,4 @@
  * 7. TRUMPS
  */
 @import '7_Trumps/_trumps.utilities.css';
+

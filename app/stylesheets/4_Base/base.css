@@ -1,0 +1,18 @@
+@import '../1_Settings/_settings.colors.css';
+
+h1 {
+    font-weight: normal;
+    color: var(--heading);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app {
+    white-space: nowrap;
+    height: 100%;
+}
+

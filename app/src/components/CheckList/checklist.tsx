@@ -1,6 +1,6 @@
 import * as React from "react"
 import  { Component} from 'react'
-import {ITask} from '../interfaces'
+import {ITask} from '../../interfaces'
 
 interface ICheckListProps {
   cardId:number

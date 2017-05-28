@@ -10,3 +10,13 @@
  * HTML5 Doctor                :: http://html5doctor.com
  * and the HTML5 Boilerplate   :: http://html5boilerplate.com
  */
+
+* {
+    box-sizing: border-box;
+}
+
+html,body,#app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

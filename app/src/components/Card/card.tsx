@@ -1,7 +1,7 @@
 import * as React from "react";
 import  {Component} from 'react'
-import {ICard} from '../interfaces'
-import {CheckList} from './checklist'
+import {ICard} from '../../interfaces'
+import {CheckList} from '../CheckList/checklist'
 
 export class Card extends Component<ICard, {}> {
 

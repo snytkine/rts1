@@ -1,7 +1,7 @@
 import * as React from "react";
 import  {Component} from 'react'
-import {ICard, IKanbanProps} from "../interfaces"
-import {List} from './List'
+import {IKanbanProps} from "../../interfaces"
+import {List} from '../List/list'
 
 
 export class KanbanBoards extends Component<IKanbanProps, any> {

@@ -1,7 +1,7 @@
 import * as React from "react";
 import  { Component} from 'react'
-import {ICardsList} from "../interfaces"
-import {Card} from "./card"
+import {ICardsList} from "../../interfaces"
+import {Card} from "../Card/card"
 
 
 

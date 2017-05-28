@@ -2,6 +2,9 @@
  * OBJECTS - WRAPPERS
  ****************************/
 
+
+
 body {
-  background-color: var(--primaryBackground);
+    background-color: var(--primaryBackground);
+    font-family: var(--fontDefault);
 }
