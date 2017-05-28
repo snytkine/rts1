@@ -11,7 +11,7 @@ export class CheckList extends Component<ICheckListProps, {}> {
 
   render(){
     let tasks = this.props.tasks.map(task => {
-      return <li className="checklist__taks">
+      return <li className="checklist__task">
         <input type="checkbox" defaultChecked={task.done} />
         {task.name}
         <a href="#" className="checklist__task--remove" />
