@@ -4,6 +4,7 @@ import {KanbanBoards} from "../../components/KanbanBoard/"
 let cardsList: ICard[] = [
   {
     id: 1,
+    key: 1,
     title: "Read the Book",
     description: "I Should read the whole book",
     color: '#BD8D31',
@@ -12,6 +13,7 @@ let cardsList: ICard[] = [
   },
   {
     id: 2,
+    key: 2,
     title: "Write Some Code",
     description: "Code along with the sample in the book",
     color: '#3A7E28',

@@ -11,6 +11,7 @@ export interface ITask {
 }
 export interface ICard {
   id: number
+  key: string|number
   title: string
   description: string
   status?: IStatus

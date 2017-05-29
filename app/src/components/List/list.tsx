@@ -10,6 +10,7 @@ export class List extends Component<ICardsList, {}>{
   render(){
     let cards = this.props.cards.map(card => {
       return <Card id={card.id}
+                   key={card.id}
                    title={card.title}
                    color={card.color}
                    description={card.description}
