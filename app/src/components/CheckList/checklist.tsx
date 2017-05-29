@@ -1,6 +1,7 @@
 import * as React from "react"
 import  { Component} from 'react'
 import {ITask} from '../../interfaces'
+require('./Component.module.css');
 
 interface ICheckListProps {
   cardId:number
@@ -18,6 +19,9 @@ export class CheckList extends Component<ICheckListProps, {}> {
       </li>
     });
 
-    return <div className="checklist"><ul>{tasks}</ul></div>
+    return <div className="checklist">
+      <ul>{tasks}</ul>
+      <input type="text" className="checklist--add-task" placeholder="Type then hit Enter to add task?" />
+    </div>
   }
 }
