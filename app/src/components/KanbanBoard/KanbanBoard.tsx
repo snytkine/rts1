@@ -1,5 +1,5 @@
 import * as React from "react";
-import  {Component} from 'react'
+import {Component} from 'react'
 import {IKanbanProps} from "../../interfaces"
 import {List} from '../List/list'
 

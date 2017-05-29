@@ -1,5 +1,5 @@
 import * as React from "react";
-import  {Component, CSSProperties} from 'react'
+import {Component, CSSProperties} from 'react'
 import {ICard} from '../../interfaces'
 import {CheckList} from '../CheckList/checklist'
 
