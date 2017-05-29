@@ -13,7 +13,7 @@ const {AppContainer} = require("react-hot-loader");
  - In webpack Dev it will be injected as /**
  - In webpack prod it will be extracted as a separate bundled file
  */
-import "./../stylesheets/main.css";
+//import "./../stylesheets/main.css";
 
 /*
  Main App Container

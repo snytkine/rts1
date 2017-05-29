@@ -1,44 +1,16 @@
 import * as React from "react";
-import {ICard} from '../../interfaces'
-import {KanbanBoards} from "../../components/KanbanBoard/"
-let cardsList: ICard[] = [
-  {
-    id: 1,
-    key: 1,
-    title: "Read the Book",
-    description: "I Should read the whole book",
-    color: '#BD8D31',
-    status: "in-progress",
-    tasks: []
-  },
-  {
-    id: 2,
-    key: 2,
-    title: "Write Some Code",
-    description: "Code along with the sample in the book",
-    color: '#3A7E28',
-    status: "todo",
-    tasks: [
-      {
-        id: 1,
-        name: "ContactList Example",
-        done: true
-      },
-      {
-        id: 2,
-        name: "Kanban Example",
-        done: false
-      },
-      {
-        id: 3,
-        name: "My own experiments!",
-        done: false
-      }
+import {IContact} from '../../interfaces'
+import {ContactApp} from "../../components/ContactApp/"
 
 
-    ]
-  }
+let cardsList: IContact[] = [
+  {name: "Cassio Zen", email: "cassiozen@gmail.com"},
+  {name: "Dan Abramov", email: "gaearon@somewhere.com"},
+  {name: "Pete Hunt", email: "floydophone@somewhere.com"},
+  {name: "Paul O'Shannessy", email: "zpao@somewhere.com"},
+  {name: "Ruan Florence", email: "rprlorence@somewhere.com"},
+  {name: "Sebastian Markbage", email: "sebmarkbage@here.com"}
 ];
 
 
-export default () => <KanbanBoards cards={cardsList}/>
+export default () => <ContactApp contacts={cardsList}/>

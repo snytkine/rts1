@@ -28,3 +28,8 @@ export interface ICardsList {
   title: string
   cards: ICard[]
 }
+
+export interface IContact {
+  name: string
+  email: string
+}
