@@ -14,6 +14,7 @@ export interface ICard {
   title: string
   description: string
   status?: IStatus
+  color?: string
   tasks: ITask[]
 }
 
