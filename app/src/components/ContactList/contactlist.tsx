@@ -11,9 +11,15 @@ interface IContactListProps {
 export class ContactList extends Component<IContactListProps, object> {
 
   render() {
+
+
+
+
     return (
         <ul>
-          {this.props.contacts.map(
+          {this.props.contacts.filter(
+              _ => _.name.indexOf(this.props.filterText) !== -1
+          ).map(
               contact => <ContactItem key={contact.email}
                                       name={contact.name}
                                       email={contact.email}
