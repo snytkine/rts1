@@ -1,6 +1,7 @@
 import * as React from "react";
 import {IContact} from '../../interfaces'
 import {ContactApp} from "../../components/ContactApp/"
+import {ContactsAppContainer} from "../../components/ContactApp/contactsappcontainer"
 
 
 let cardsList: IContact[] = [
@@ -13,4 +14,4 @@ let cardsList: IContact[] = [
 ];
 
 
-export default () => <ContactApp contacts={cardsList}/>
+export default () => <ContactsAppContainer/>

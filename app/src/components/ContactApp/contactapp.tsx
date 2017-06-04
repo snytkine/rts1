@@ -5,11 +5,11 @@ import {ContactList} from '../ContactList/contactlist'
 import {IContact} from '../../interfaces'
 
 
-interface ContactAppProps {
+export interface ContactAppProps {
   contacts: IContact[]
 }
 
-interface IContactAppState {
+export interface IContactAppState {
   filterText: string
 }
 
