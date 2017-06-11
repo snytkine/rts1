@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Component, CSSProperties} from 'react'
-import {ICard} from '../../interfaces'
+import {ICard,  IKanbanProps} from '../../interfaces'
 import {CheckList} from '../CheckList/checklist'
 
 
@@ -42,7 +42,7 @@ export class Card extends Component<ICard, ICardState> {
       cardDetails = (
           <div className="card__details">
             {this.props.description}
-            <CheckList cardId={this.props.id} tasks={this.props.tasks}/>
+            <CheckList cardId={this.props.id} tasks={this.props.tasks} taskCallbacks={this.props.taskCallbacks}/>
           </div>
       );
     } else {

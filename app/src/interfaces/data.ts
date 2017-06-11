@@ -17,10 +17,19 @@ export interface ICard {
   status?: IStatus
   color?: string
   tasks: ITask[]
+  taskCallbacks: ITaskCallbacks
+}
+
+
+export interface ITaskCallbacks {
+  toggle: Function
+  delete: Function
+  add: Function
 }
 
 export interface IKanbanProps {
   cards: ICard[]
+  taskCallbacks: ITaskCallbacks
 }
 
 export interface ICardsList {

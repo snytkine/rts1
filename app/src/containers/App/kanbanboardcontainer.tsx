@@ -12,7 +12,10 @@ const API_HEADERS = {
   Authorization: 'GUXWZ47'
 };
 
-export default class KanbanBoardContainer extends Component<IKanbanProps, IKanbanProps> {
+export interface IState {
+  cards: ICard[]
+}
+export default class KanbanBoardContainer extends Component<IKanbanProps, IState> {
 
   constructor() {
     super();
@@ -36,7 +39,28 @@ export default class KanbanBoardContainer extends Component<IKanbanProps, IKanba
         .catch(_ => console.error(_))
   }
 
+  addTask(cardId:any, taskName:any){
+
+  }
+
+  deleteTask(cardId:any, taskId:any, taskIndex:number){
+
+  }
+
+  toggleTask(cardId:any, taskId:any, taskIndex:number){
+
+  }
+
+
   render() {
-    return <KanbanBoard cards={this.state.cards}/>
+    return <KanbanBoard cards={this.state.cards}
+    taskCallbacks={
+      {
+       toggle: this.toggleTask.bind(this),
+        delete: this.deleteTask.bind(this),
+        add: this.addTask.bind(this)
+      }
+    }
+    />
   }
 }
