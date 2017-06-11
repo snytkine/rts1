@@ -18,7 +18,7 @@ import "./../stylesheets/main.css";
 /*
  Main App Container
  */
-import App from "./containers/App/App";
+import {KanbanBoardContainer} from "./containers/App/";
 
 // Render function containing the HMR AppContainer
 const render = (Component: any) => {
@@ -31,7 +31,7 @@ const render = (Component: any) => {
   );
 };
 
-render(App);
+render(KanbanBoardContainer);
 
 // TypeScript declaration for module.hot
 declare var module: { hot: any };
@@ -41,7 +41,7 @@ if (module.hot) {
     console.log("Hot reload for APP");
     // If we receive a HMR request for our App container,
     // then reload it using require (we can't do this dynamically with import)
-    const NextApp = require("./containers/App/App").default;
+    const NextApp = require("./containers/App/kanbanboardcontainer").default;
     render(NextApp);
   });
 }

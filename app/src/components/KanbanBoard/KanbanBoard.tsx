@@ -4,7 +4,7 @@ import {IKanbanProps} from "../../interfaces"
 import {List} from '../List/list'
 
 
-export class KanbanBoards extends Component<IKanbanProps, any> {
+export class KanbanBoard extends Component<IKanbanProps, any> {
 
 
   render() {

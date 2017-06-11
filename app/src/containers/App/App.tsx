@@ -1,6 +1,6 @@
 import * as React from "react";
 import {ICard} from '../../interfaces'
-import {KanbanBoards} from "../../components/KanbanBoard/"
+import {KanbanBoard} from "../../components/KanbanBoard/"
 let cardsList: ICard[] = [
   {
     id: 1,
@@ -41,4 +41,4 @@ let cardsList: ICard[] = [
 ];
 
 
-export default () => <KanbanBoards cards={cardsList}/>
+export default () => <KanbanBoard cards={cardsList}/>
