@@ -2,6 +2,7 @@ import * as React from "react"
 import  {Component} from 'react'
 import {ITask} from '../../interfaces'
 import {ITaskCallbacks} from "../../interfaces/data";
+import {Event} from "_debugger";
 require('./Component.module.css');
 
 interface ICheckListProps {
@@ -11,6 +12,14 @@ interface ICheckListProps {
 }
 
 export class CheckList extends Component<ICheckListProps, {}> {
+
+  checkInputKeyPress(evt: KeyboardEvent){
+    if(evt.key === 'Enter'){
+      const targ = evt.target as HTMLInputElement;
+      this.props.taskCallbacks.add(this.props.cardId, targ.value)
+      targ.value = "";
+    }
+  }
 
   render() {
     let tasks: Array<JSX.Element> = this.props.tasks.map((task, taskIndex) => {
@@ -26,7 +35,8 @@ export class CheckList extends Component<ICheckListProps, {}> {
 
     return <div className="checklist">
       <ul>{tasks}</ul>
-      <input type="text" className="checklist--add-task" placeholder="Type then hit Enter to add task?"/>
+      <input type="text" className="checklist--add-task" placeholder="Type then hit Enter to add task?"
+      onKeyPress={this.checkInputKeyPress.bind(this)}/>
     </div>
   }
 }

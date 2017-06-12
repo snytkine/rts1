@@ -5,7 +5,6 @@ import {KanbanBoard} from "../../components/KanbanBoard/"
 import {IKanbanProps} from "../../interfaces"
 
 
-
 const API_URI = 'http://kanbanapi.pro-react.com';
 const API_HEADERS = {
   'Content-Type': 'application/json',
@@ -39,28 +38,28 @@ export default class KanbanBoardContainer extends Component<IKanbanProps, IState
         .catch(_ => console.error(_))
   }
 
-  addTask(cardId:any, taskName:any){
-
+  addTask(cardId: any, taskName: any) {
+    console.log("AddTask fired with cardId=", cardId, " taskname:", taskName)
   }
 
-  deleteTask(cardId:any, taskId:any, taskIndex:number){
-
+  deleteTask(cardId: any, taskId: any, taskIndex: number) {
+    console.log("deleteTask called with cardId=", cardId, " taskId=", taskId, " taskIndex=", taskIndex);
   }
 
-  toggleTask(cardId:any, taskId:any, taskIndex:number){
-
+  toggleTask(cardId: any, taskId: any, taskIndex: number) {
+    console.log("toggleTask called with cardId=", cardId, 'taskId=', taskId, 'taskIndex=', taskIndex)
   }
 
 
   render() {
     return <KanbanBoard cards={this.state.cards}
-    taskCallbacks={
-      {
-       toggle: this.toggleTask.bind(this),
-        delete: this.deleteTask.bind(this),
-        add: this.addTask.bind(this)
-      }
-    }
+                        taskCallbacks={
+                          {
+                            toggle: this.toggleTask.bind(this),
+                            delete: this.deleteTask.bind(this),
+                            add: this.addTask.bind(this)
+                          }
+                        }
     />
   }
 }
